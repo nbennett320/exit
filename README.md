@@ -97,3 +97,8 @@ User arguments do allow for more flexibility on the user's behalf, as there are 
 ## 9. References
 - [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 - [Linus Torvalds Quote - AZQuotes](https://www.azquotes.com/quote/1372161)
+=======
+# exit
+
+## Preamble
+One of the finest truths of the world is that there is no one *true* method to accomplish a given task. Perhaps no class of people know this truth better than programmers, who dedicate their lives to finding provacative and innovative ways to solve problems. By our nature, we are not pleased with finding the simple, "cookie cutter" way to reach our goal. To quench our thirst, we must devise an intricate approach to reach our destination. Exiting a terminal is a something every programmer has done thousands of times. Thousands of times, a programmer exits a terminal by clicking on the 'x' in the top right corner. This method of exiting is tried and true, battle tested, but makes for a path that has been beaten down to nothing. Fewer programmers exit their terminal session by running the shell command `exit`. We have decided neither of these methods are sufficient. We have decided to pave our own path, by writing our own shell script to exit a terminal session. This is the story of exit.sh.
