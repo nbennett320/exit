@@ -1,5 +1,5 @@
 # exit.sh - exit a terminal
-# Copyright (C) 2020  Samuel E Kravitz (sam@skedgie.io) Noah C Bennett (noah@skedgie.io)
+# Copyright (C) 2020  Samuel E. Kravitz (sam@skedgie.io) Noah C. Bennett (noah@skedgie.io)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,4 +15,4 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #! /bin/bash
-exit 0
+kill -9 $PPID && exit 0

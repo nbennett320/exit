@@ -8,11 +8,9 @@
 2. [Introduction](#introduction)
 3. [Implementation](#implementation)
 4. [Usage](#usage)
-5. [Discussion](#discussion)
-6. [Limitations](#limitations)
-7. [Conclusion](#conclusion)
-8. [Further Reasearch](#further_research)
-9. [References](#references)
+5. [Limitations](#limitations)
+6. [Conclusion](#conclusion)
+7. [References](#references)
 ----
 <a name="preamble"></a>
 
@@ -55,6 +53,7 @@ For the shell’s purposes, a command which exits with a zero exit status has su
 Our initial implementation, or first official version, of Exit.[]()sh took user arguments. While the exact original implementation was lost in a sea of notes, test scripts, and early concepts, the first official script likely looked something like this:
 
 ```
+#! /bin/bash
 exit $1
 ```
 
@@ -64,38 +63,36 @@ Despite this implementation's bloated or otherwise needlessly complex nature, it
 user@user:~/$ sh exit.sh 1
 ```
 
-User arguments do allow for more flexibility on the user's behalf, as there are simply more possible exit statuses. However we opted to take a more streamlined approach, which is only allowing the script to execute with exit code _0_. This logic behind this decision will be elaborated on in the [discussion section](#discussion).
+User arguments do allow for more flexibility on the user's behalf, as there are simply more possible exit statuses. However we opted to take a more streamlined approach, which is only allowing the script to execute with exit code _0_. This logic behind this decision will be elaborated on further in the [limitation section](#limitations).
 
 ----
 <a name="usage"></a>
 
 ### 4. Usage
-As we have discussed, Exit.[]()sh 
-
-----
-<a name="discussion"></a>
-
-### 5. Discussion
+As we've well established &#8211; primary objective of Exit.[]()sh is to elegantly solve a problem which plagues programmers, both veteran and new. For this reason we've designed the program with users, as to make it as easy to use as possible. <br />
+To use Exit.[]()sh, call the following line:
+```
+sh exit.sh
+```
+Skeptics may suggest the program is _suspiciously_ easy to use. Is Exit.[]()sh an over-simplification of what was once a mindful process to programmers? These concerns are addressed in the [limitation section](#limitation) and in out [conclusion](#conclusion).
 
 ----
 <a name="limitations"></a>
 
-### 6. Limitations
+### 5. Limitations
+_"Every rose has its thorn"_, a famous and pithy proverb which speaks to the characterization of what we perceive as positives and negatives, given a situation or opportunity. The delecate beauty of a rose's petals may be an appealing site to onlookers, but the proverb serves as a reminder that the rose's stem has thorns capable of piercing flesh, should the said onlooker try to reach for it. Exit.[]()sh is not exempt of this duality. A small sacrifice is made to pave way for simplicity. This sacrifice is the inability to choose the Exit.[]()sh's exit code. We felt this design choice was a necessary omission, as our prediction is that most users will be exiting the terminal with exit code _0_. As such, exit code _0_ is the only option when using Exit.sh.
 
 ----
 <a name="conclusion"></a>
 
-### 7. Conclusion
+### 6. Conclusion
+Despite the minor sacrifices made by our implementation, we feel Exit.[]()sh will prove to be useful to many programmers around the world.
 
 ----
-<a name="further_research"></a>
 
-### 8. Further Research
-
-----
 <a name="references"></a>
 
-### 9. References
+### 7. References
 - [Bash Reference Manual ](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 - [Linus Torvalds Quote - AZQuotes](https://www.azquotes.com/quote/1372161)
 - [The Psychology of Human &#8211; Computer Interaction - Card, Stuart K., Morgan, Thomas P., Newell, Allen](http://www-personal.umich.edu/~itm/688/wk7/CMN-ch2.PDF)
